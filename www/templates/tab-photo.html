@@ -1,0 +1,17 @@
+<ion-view view-title="Photo">
+  <ion-content>
+    <a class="photo-item"  ng-repeat="photo in photos" href="#/tab/photo/{{photo.photo_id}}" >
+    	<img ng-src="{{photo.photo_url}}">
+    </a>   
+  </ion-content>
+</ion-view>
+<style type="text/css">
+	.photo-item {
+		width: 25%;
+		padding: 3px;
+		display: inline-block;
+	}
+	img {
+		width: 100%;
+	}
+</style>
